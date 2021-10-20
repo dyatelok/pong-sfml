@@ -258,8 +258,8 @@ void Game::update(Time deltaTime)
             Ball.setPosition(40 , Ball.getPosition().y);
             BallDirection.x = -BallDirection.x;
         }
-        if (700 < Ball.getPosition().x) {
-            Ball.setPosition(700 , Ball.getPosition().y);
+        if (740 < Ball.getPosition().x) {
+            Ball.setPosition(740 , Ball.getPosition().y);
             BallDirection.x = -BallDirection.x;
         }
         if (Ball.getPosition().y < 0) {
