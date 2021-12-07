@@ -249,7 +249,7 @@ void Game::update(Time deltaTime)
             BallDirection.y = -BallDirection.y;
         }
 
-        Ball.move(750.f * BallDirection * deltaTime.asSeconds());
+        Ball.move(400.f * BallDirection * deltaTime.asSeconds());
         FirstRacket.move(200.f * FirstMove * deltaTime.asSeconds());
         SecondRacket.move(200.f * SecondMove * deltaTime.asSeconds());
     } else
@@ -287,7 +287,7 @@ void Game::render()
 
 int main() {
     srand( time(0) );
-    if (!font.loadFromFile("../ArialBlack.ttf")) {cout << "CAN'T LOAD FONT";}
+    if (!font.loadFromFile("ArialBlack.ttf")) {cout << "CAN'T LOAD FONT";}
     Game game;
     game.run();
     return 0;
